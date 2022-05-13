@@ -15,16 +15,29 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <link href="assets/css/normalize/normalize.css" rel="stylesheet">
+    <style>
+
+    </style>
 </head>
 <body>
-<div id="game">
-    <div id="block"></div>
-    <div id="hole"></div>
-    <div id="character"></div>
-</div>
+<section id="content">
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character"></div>
+    </div>
+</section>
+
+<section id="dashBoardContent">
+    <img src="assets/images/flappyBall.gif" alt="" id="dashImg">
+    <button id="startBtn">Start</button>
+</section>
+<section id="countDown"></section>
 </body>
 <script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="assets/script/script.js"></script>
-
+<script>
+    $("#content").css("display","none");
+</script>
 </html>

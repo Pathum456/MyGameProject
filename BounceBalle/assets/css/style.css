@@ -44,3 +44,27 @@
     top: 100px;
     border-radius: 50%;
 }
+/*-----------------------------------------------*/
+/*DashBoard content*/
+#dashBoardContent{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+#dashImg{
+
+    width: 100vw;
+    height: 100vh;
+}
+#startBtn{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background: yellow;
+    border:2px solid red;
+    border-radius: 25%;
+    left: 50%;
+    top: 70%;
+    margin: auto;
+    z-index: 100;
+}
