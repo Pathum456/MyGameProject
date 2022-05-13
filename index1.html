@@ -1,0 +1,102 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @create - 2022-05-11 - 11.08
+    * @since - v0.1.0 
+**/
+-->
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/images/squad.jpg" rel="icon">
+    <!--<link href="assets/Styles/style.css" rel="stylesheet">-->
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #game{
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        #character{
+            width: 20px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            top: 150px;
+
+        }
+        .animate{
+            animation: jump 500ms ;
+        }
+        @keyframes jump {
+            0%{top:150px}
+            30%{top:100px}
+            70%{top:100px}
+            100%{top:150px}
+
+        }
+        #block{
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            position: relative;
+            top: 130px;
+            left: 480px;
+            animation: block 1s infinite linear;
+
+        }
+        @keyframes block {
+            0%{left :480px}
+            100%{left :-40px}
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="game">
+    <div id="character" class="animate"></div>
+    <div id="block"></div>
+</div>
+
+
+
+
+
+
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    var character=document.getElementById("character");
+    var block=document.getElementById("block");
+    function jump() {
+        if (character.classList !== "animate")
+        character.classList.add("animate");
+        setTimeout(function (){
+            character.classList.remove("animate")
+        },500);
+
+    }
+    var checkDead = setInterval(function () {
+        var characterTop=parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+        var blockLeft=parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+        if (blockLeft<20 && blockLeft>0 % characterTop>=130){
+            block.style.animation="none";
+            block.style.display="none";
+            alert("you lose...")
+
+        }
+    },10);
+</script>
+</body>
+</html>

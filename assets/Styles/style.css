@@ -1,0 +1,281 @@
+/**
+    * @author _ Pathum_Kaleesha
+    * @create - 2022-04-07 - 23.24
+    * @since - v0.1.0 - CSS
+**/
+
+#section1 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#div-intro {
+    width: 100%;
+    height: 100%;
+
+}
+
+#hens-img {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+#btn-start {
+    position: absolute;
+    background: red;
+    width: 10%;
+    top: 80%;
+    left: 45%;
+
+
+}
+
+#login-div {
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    background: saddlebrown;
+    right: 0;
+    top: 30%;
+
+}
+
+#l1 {
+    position: absolute;
+    background: yellow;
+    width: 100px;
+    height: 30px;
+    left: 10%;
+    top: 10%;
+}
+
+
+#title {
+    z-index: 1000000000000;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    font-size: 80px;
+    font-family: fantasy;
+    font-style: inherit;
+    font-weight: bolder;
+    color: lawngreen;
+}
+
+/*--------------------*/
+
+
+/*section 2*/
+#hr1 {
+    position: absolute;
+    top: 17%;
+    z-index: 10;
+    background: black;
+
+}
+
+#hr2 {
+    position: absolute;
+    bottom: 17%;
+}
+
+.henLayEggImg {
+    position: absolute;
+    top: 4.6%;
+    width: 7%;
+}
+
+#hleImg1 {
+    left: 15%;
+}
+
+#hleImg2 {
+    left: 45%;
+}
+
+#hleImg3 {
+    left: 75%;
+}
+
+#heartImg {
+    left: 10%;
+}
+
+#heartLbl {
+    left: 12%;
+}
+
+#coinImg {
+    left: 40%;
+}
+
+#coinLbl {
+    left: 42%;
+}
+
+#starsImg {
+    left: 70%;
+}
+
+#starsLbl {
+    left: 72%;
+}
+
+.gameIcon {
+    position: absolute;
+    bottom: 8%;
+    z-index: 10;
+}
+
+.gameLable {
+    position: absolute;
+    bottom: 10%;
+    width: 100px;
+    height: 25px;
+    background: yellow;
+}
+#buckDiv{
+    width: 100px;
+    height: 100px;
+    background:  no-repeat center;
+    position: absolute;
+    top: 70%;
+    transition: 0.1s;
+}
+#bucket {
+    width: 100%;
+    height: 100%;
+    background-size: 100% ;
+}
+
+#egg {
+    width: 2%;
+    position: absolute;
+    top: 17%;
+    left: 17.5%;
+    animation-name: eggUD;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: revert;
+
+
+}
+
+#egg2 {
+    width: 2%;
+    position: absolute;
+    top: 17%;
+    left: 47.5%;
+    animation-name: eggUD1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+    animation-delay: 2s;
+}
+
+#egg3 {
+    width: 2%;
+    position: absolute;
+    top: 17%;
+    left: 77.5%;
+    animation: eggUD2 2s ;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+    animation-delay: 3s;
+
+
+
+
+}
+
+@keyframes eggUD1 {
+    0% {
+        left: 47.5%;
+        top: 17%;
+
+    }
+    99.9% {
+        left: 47.5%;
+        top: 75%;
+        /*transform: rotate(720deg);*/
+    }
+    100% {
+        left: 47.5%;
+        top: 17%;
+
+
+    }
+}
+
+@keyframes eggUD {
+    0% {
+        left: 17.7%;
+        top: 17%;
+
+    }
+    99.9% {
+        left: 17.7%;
+        top: 75%;
+        /*transform: rotate(720deg);*/
+    }
+    100% {
+        left: 17.7%;
+        top: 17%;
+
+    }
+}
+
+@keyframes eggUD2 {
+    0% {
+        left: 77.5%;
+        top: 17%;
+
+    }
+    99.9% {
+        left: 77.5%;
+        top: 75%;
+        /*transform: rotate(720deg);*/
+    }
+    100% {
+        left: 77.5%;
+        top: 17%;
+
+    }
+}
+
+/*------------------------------------------*/
+
+.con{
+    position: absolute;
+   /* width: 100%;*/
+    height: 56%;
+    top: 22%;
+    overflow: hidden;
+    margin: auto;
+    left: 15%;
+    right: 18%;
+    /*background: green;
+    z-index: 100;*/
+}
+#brokeEgg1{
+    position: absolute;
+    top: 77%;
+    left: 16.7%;
+    width: 3%;
+    height: 4%;
+}#brokeEgg2{
+    position: absolute;
+    top: 77%;
+    left: 46.5%;
+    width: 3%;
+    height: 4%;
+}#brokeEgg3{
+    position: absolute;
+    top: 77%;
+    left: 76.5%;
+    width: 3%;
+    height: 4%;
+}
