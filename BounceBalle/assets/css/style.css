@@ -50,6 +50,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: skyblue;
 }
 #dashImg{
 
@@ -67,4 +68,8 @@
     top: 70%;
     margin: auto;
     z-index: 100;
+}
+body{
+    width: 100vw;
+    background-color: skyblue;
 }
