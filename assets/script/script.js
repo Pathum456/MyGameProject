@@ -103,7 +103,8 @@ $("#changeColor").css("display", "none");
 $("#colorPicker").click(function () {
     $("#changeColor").css("display", "block");
     $("#colorPicker").css("display", "none");
-});$("#changeColor").click(function () {
+});
+$("#changeColor").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
 });
@@ -132,20 +133,38 @@ $("#c5").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
     $("#character").css("background-color", "fuchsia");
-});$("#c6").click(function () {
+});
+$("#c6").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
     $("#character").css("background-color", "#3f341e");
-});$("#c7").click(function () {
+});
+$("#c7").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
     $("#character").css("background-color", "#9c5e35");
-});$("#c8").click(function () {
+});
+$("#c8").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
     $("#character").css("background-color", "#5f1d11");
-});$("#c9").click(function () {
+});
+$("#c9").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
     $("#character").css("background-color", "#032d5d");
 });
+/*------------*/
+/*
+var i = 0;
+var txt = 'Buounce Ball';
+var speed = 70;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("title").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+*/
