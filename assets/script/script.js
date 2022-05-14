@@ -10,7 +10,7 @@ var jumping = 0;
 var counter = 0;
 
 $("#startBtn").click(function () {
-    $("#gameOver").css("display","none");
+    $("#gameOver").css("display", "none");
     $("#name").css("display", "none");
     character.style.top = 100 + "px";
     $("#hdiv").css("display", "none");
@@ -22,11 +22,17 @@ $("#startBtn").click(function () {
         counter++;
     });
     var highsScore = 0;
+    $("#addName").click(function (){
     setInterval(function () {
+
+
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if (jumping === 0) {
-            character.style.top = (characterTop + 3) + "px";
-        }
+
+            if (jumping === 0) {
+                character.style.top = (characterTop + 3) + "px";
+            }
+
+
         var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
         var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
         var cTop = -(500 - characterTop);
@@ -35,7 +41,7 @@ $("#startBtn").click(function () {
             //$("#addName").text("Start");
             character.style.top = 100 + "px";
             counter = 0;
-            $("#gameOver").css("display","block");
+            $("#gameOver").css("display", "block");
 
         }
 
@@ -48,16 +54,19 @@ $("#startBtn").click(function () {
 
 
 });
-
+});
 
 function jump() {
     jumping = 1;
     let jumpCount = 0;
     var jumpInterval = setInterval(function () {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+
         if ((characterTop > 6) && (jumpCount < 15)) {
             character.style.top = (characterTop - 4) + "px";
         }
+
+
         if (jumpCount > 20) {
             clearInterval(jumpInterval);
             jumping = 0;
@@ -170,6 +179,6 @@ function typeWriter() {
     }
 }
 */
-$("#gameOver").click(function (){
-   $("#gameOver").css("display","none");
+$("#gameOver").click(function () {
+    $("#gameOver").css("display", "none");
 });
