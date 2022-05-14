@@ -17,10 +17,13 @@
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <link href="assets/css/normalize/normalize.css" rel="stylesheet">
     <style>
-
+        body {
+            background: url("assets/images/bgFlappybird.png");
+        }
     </style>
 </head>
 <body>
+
 <section id="content">
     <div id="game">
         <div id="block"></div>
@@ -28,13 +31,29 @@
         <div id="character"></div>
     </div>
     <button id="help"><img alt="" id="howPlay" src="assets/images/icons/info.gif"></button>
-    <div id="hdiv"><h3 id="h3Play" ><u>How to play</u></h3>
-    <ul id="helpList">
-        <li>Click to jump ball.</li>
-        <li>Dont hit the wall.</li>
-        <li>Go through from the hall.</li>
+    <div id="hdiv"><h3 id="h3Play"><u>How to play</u></h3>
+        <ul id="helpList">
+            <li class="list">Click to jump ball.</li>
+            <li class="list">Dont hit the wall.</li>
+            <li class="list">Go through from the holl.</li>
 
-    </ul></div>
+        </ul>
+    </div>
+    <div id="gamesPoints">
+        <label id="score">Score</label>
+        <label id="highscore">Best Score</label>
+        <label for="player" id="lblPlayer">Player Name</label>
+        <input id="player" placeholder="Input Player Name" type="text">
+        <button id="addName">Done</button>
+        <label id="name"></label>
+    </div>
+    <div id="setting"><img alt="" id="colorPicker" src="assets/images/colorPicker.png"></div>
+    <div id="changeColor">
+<div id="c1"></div>
+<div id="c2"></div>
+<div id="c4"></div>
+<div id="c5"></div>
+    </div>
 </section>
 
 <section id="dashBoardContent">

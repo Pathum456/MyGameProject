@@ -4,30 +4,39 @@
     * @since - v0.1.0
 **/
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
-#game{
+
+
+#game {
     width: 400px;
-    height: 500px;
-    border: 1px solid black;
+    height: 504px;
+    border: 5px solid black;
     margin: auto;
     overflow: hidden;
 }
-#block{
+
+#block {
     width: 50px;
-    height: 500px;
+    height: 504px;
     background-color: black;
     position: relative;
     left: 400px;
     animation: block 5s infinite linear;
 }
-@keyframes block{
-    0%{left:400px}
-    100%{left:-50px}
+
+@keyframes block {
+    0% {
+        left: 400px
+    }
+    100% {
+        left: -50px
+    }
 }
-#hole{
+
+#hole {
     width: 50px;
     height: 150px;
     background-color: white;
@@ -36,7 +45,8 @@
     top: -500px;
     animation: block 5s infinite linear;
 }
-#character{
+
+#character {
     width: 20px;
     height: 20px;
     background-color: red;
@@ -44,63 +54,178 @@
     top: 100px;
     border-radius: 50%;
 }
+
 /*-----------------------------------------------*/
 /*DashBoard content*/
-#dashBoardContent{
+#dashBoardContent {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
     background-color: skyblue;
 }
-#dashImg{
+
+#dashImg {
 
     width: 100vw;
     height: 100vh;
 }
-#startBtn{
+
+#startBtn {
     position: absolute;
     width: 100px;
     height: 40px;
     background: yellow;
-    border:2px solid red;
+    border: 2px solid red;
     border-radius: 25%;
     left: 50%;
     top: 70%;
     margin: auto;
     z-index: 100;
 }
-body{
+
+body {
     width: 100vw;
-    background-color: skyblue;
+    height: 100vh;
+
 }
-#help{
+
+
+#help {
     position: absolute;
     left: 2%;
     top: 3%;
     width: 40px;
     height: 40px;
 }
-#howPlay{
+
+#howPlay {
     width: 100%;
     height: 100%;
 }
-#hdiv{
+
+#hdiv {
     width: 250px;
     height: 300px;
     position: absolute;
     left: 2%;
     top: 3%;
     border: 1px solid black;
+    background: chocolate;
 }
-#h3Play{
+
+#h3Play {
     position: absolute;
     left: 20%;
     top: 3%;
-font-weight: bolder ;
+    font-weight: bolder;
 }
-#helpList{
+
+#helpList {
     position: absolute;
     left: 7%;
     right: 7%;
+    top: 23%;
+}
+
+.list {
+    margin: auto;
+    padding-top: 13%;
+}
+
+#gamesPoints {
+    position: absolute;
+    right: 2%;
     top: 3%;
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    background: darkcyan;
+}
+
+
+#score {
+    position: absolute;
+    left: 3%;
+    top: 56%;
+    right: 9%;
+    text-align: center;
+    height: 20px;
+    font-size: 25px;
+}
+
+#highscore {
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    top: 75%;
+    text-align: center;
+    height: 20px;
+    font-size: 26px;
+}
+
+#lblPlayer {
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    top: 6%;
+    text-align: center;
+    font-weight: bold;
+}
+#player {
+    position: absolute;
+    text-align: center;
+    left: 9%;
+    right: 9%;
+    top: 19%;
+    height: 30px;
+}
+#addName{
+    position: absolute;
+    text-align: center;
+    left: 9%;
+    right: 9%;
+    top: 36%;
+    height: 30px;
+}
+#name {
+    position: absolute;
+    text-align: center;
+    left: 9%;
+    right: 9%;
+    top: 19%;
+    height: 30px;
+}
+
+#setting{
+    position: absolute;
+    left: 1.6%;
+    top: 13%;
+    width: 40px;
+    height: 40px;
+}
+#changeColor{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 1.6%;
+    top: 13%;
+    border: 1px solid black;
+    background: chocolate;
+}
+#c1{
+    width: 50px;
+    height: 50px;
+    left: 3%;
+    top: 3%;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+}#c2{
+    width: 50px;
+    height: 50px;
+    left: 28%;
+    top: 3%;
+    position: absolute;
+    background-color: darkcyan;
+    border-radius: 50%;
 }

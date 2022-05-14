@@ -10,7 +10,9 @@ var jumping = 0;
 var counter = 0;
 
 $("#startBtn").click(function () {
-    $("#hdiv").css("display","none");
+    $("#name").css("display", "none");
+    character.style.top = 100 + "px";
+    $("#hdiv").css("display", "none");
     $("#dashBoardContent").css("display", "none");
     $("#content").css("display", "block");
     hole.addEventListener('animationiteration', () => {
@@ -18,6 +20,7 @@ $("#startBtn").click(function () {
         hole.style.top = random + "px";
         counter++;
     });
+    var highsScore = 0;
     setInterval(function () {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
         if (jumping === 0) {
@@ -27,22 +30,25 @@ $("#startBtn").click(function () {
         var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
         var cTop = -(500 - characterTop);
         if ((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
-           // alert("Game over. Score: " + (counter - 1));
-           character.style.top = 100 + "px";
+            // alert("Game over. Score: " + (counter - 1));
+            //$("#addName").text("Start");
+            character.style.top = 100 + "px";
             counter = 0;
 
         }
 
+        if (highsScore < counter) {
+            highsScore = counter;
+            $("#highscore").text(("Best Score :" + (highsScore)))
+        }
+        $("#score").text(("Score :" + (counter)))
     }, 10);
-    jump();
+
 
 });
 
 
-
-
 function jump() {
-
     jumping = 1;
     let jumpCount = 0;
     var jumpInterval = setInterval(function () {
@@ -58,13 +64,49 @@ function jump() {
         jumpCount++;
     }, 10);
 }
-$("#help").click(function (){
 
-    $("#help").css("display","none");
-    $("#hdiv").css("display","block");
-}) ;
-$("#hdiv").click(function (){
+$("#help").click(function () {
 
-    $("#help").css("display","block");
-    $("#hdiv").css("display","none");
-}) ;
+    $("#help").css("display", "none");
+    $("#hdiv").css("display", "block");
+    $("#colorPicker").css("display", "none");
+});
+$("#hdiv").click(function () {
+
+    $("#help").css("display", "block");
+    $("#hdiv").css("display", "none");
+    $("#colorPicker").css("display", "block");
+});
+
+$("#addName").click(function () {
+    if ($("#player").val().length === 0) {
+        $("#player").css("display", "none");
+        $("#name").css("display", "block");
+        $("#name").text("Click to Enter Name");
+    } else {
+        $("#name").text($("#player").val());
+    }
+});
+
+$("#name").click(function () {
+    $("#player").val("");
+    $("#player").css("display", "block");
+    $("#name").css("display", "none");
+
+});
+$("#changeColor").css("display", "none");
+
+$("#colorPicker").click(function () {
+    $("#changeColor").css("display", "block");
+    $("#colorPicker").css("display", "none");
+});
+$("#c1").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color","red");
+});
+$("#c2").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color","darkcyan");
+});
