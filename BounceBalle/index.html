@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/images/flappyBall.gif" rel="icon">
     <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
@@ -26,10 +27,18 @@
         <div id="hole"></div>
         <div id="character"></div>
     </div>
+    <button id="help"><img alt="" id="howPlay" src="assets/images/icons/info.gif"></button>
+    <div id="hdiv"><h3 id="h3Play" ><u>How to play</u></h3>
+    <ul id="helpList">
+        <li>Click to jump ball.</li>
+        <li>Dont hit the wall.</li>
+        <li>Go through from the hall.</li>
+
+    </ul></div>
 </section>
 
 <section id="dashBoardContent">
-    <img src="assets/images/flappyBall.gif" alt="" id="dashImg">
+    <img alt="" id="dashImg" src="assets/images/flappyBall.gif">
     <button id="startBtn">Start</button>
 </section>
 <section id="countDown"></section>
@@ -38,6 +47,6 @@
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="assets/script/script.js"></script>
 <script>
-    $("#content").css("display","none");
+    $("#content").css("display", "none");
 </script>
 </html>

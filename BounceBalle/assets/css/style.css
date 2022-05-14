@@ -73,3 +73,34 @@ body{
     width: 100vw;
     background-color: skyblue;
 }
+#help{
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    width: 40px;
+    height: 40px;
+}
+#howPlay{
+    width: 100%;
+    height: 100%;
+}
+#hdiv{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    border: 1px solid black;
+}
+#h3Play{
+    position: absolute;
+    left: 20%;
+    top: 3%;
+font-weight: bolder ;
+}
+#helpList{
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    top: 3%;
+}

@@ -10,6 +10,7 @@ var jumping = 0;
 var counter = 0;
 
 $("#startBtn").click(function () {
+    $("#hdiv").css("display","none");
     $("#dashBoardContent").css("display", "none");
     $("#content").css("display", "block");
     hole.addEventListener('animationiteration', () => {
@@ -26,7 +27,7 @@ $("#startBtn").click(function () {
         var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
         var cTop = -(500 - characterTop);
         if ((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
-            alert("Game over. Score: " + (counter - 1));
+           // alert("Game over. Score: " + (counter - 1));
            character.style.top = 100 + "px";
             counter = 0;
 
@@ -41,6 +42,7 @@ $("#startBtn").click(function () {
 
 
 function jump() {
+
     jumping = 1;
     let jumpCount = 0;
     var jumpInterval = setInterval(function () {
@@ -56,3 +58,13 @@ function jump() {
         jumpCount++;
     }, 10);
 }
+$("#help").click(function (){
+
+    $("#help").css("display","none");
+    $("#hdiv").css("display","block");
+}) ;
+$("#hdiv").click(function (){
+
+    $("#help").css("display","block");
+    $("#hdiv").css("display","none");
+}) ;
