@@ -85,14 +85,17 @@ $("#addName").click(function () {
         $("#name").text("Click to Enter Name");
     } else {
         $("#name").text($("#player").val());
+        $("#name").css("display", "block");
+        $("#player").css("display", "none");
+
     }
 });
 
 $("#name").click(function () {
-    $("#player").val("");
+
     $("#player").css("display", "block");
     $("#name").css("display", "none");
-
+    $("#player").val("");
 });
 /* character color change part*/
 $("#changeColor").css("display", "none");
@@ -100,6 +103,9 @@ $("#changeColor").css("display", "none");
 $("#colorPicker").click(function () {
     $("#changeColor").css("display", "block");
     $("#colorPicker").css("display", "none");
+});$("#changeColor").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
 });
 $("#c1").click(function () {
     $("#changeColor").css("display", "none");
