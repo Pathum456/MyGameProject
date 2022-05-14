@@ -171,6 +171,7 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
 #player {
     position: absolute;
     text-align: center;
@@ -179,7 +180,8 @@ body {
     top: 19%;
     height: 30px;
 }
-#addName{
+
+#addName {
     position: absolute;
     text-align: center;
     left: 9%;
@@ -187,6 +189,7 @@ body {
     top: 36%;
     height: 30px;
 }
+
 #name {
     position: absolute;
     text-align: center;
@@ -196,23 +199,25 @@ body {
     height: 30px;
 }
 
-#setting{
+#setting {
     position: absolute;
     left: 1.6%;
     top: 13%;
     width: 40px;
     height: 40px;
 }
-#changeColor{
+
+#changeColor {
     width: 250px;
     height: 300px;
     position: absolute;
     left: 1.6%;
     top: 13%;
     border: 1px solid black;
-    background: chocolate;
+    background: linear-gradient(45deg, black, transparent);
 }
-#c1{
+
+#c1 {
     width: 50px;
     height: 50px;
     left: 3%;
@@ -220,12 +225,77 @@ body {
     position: absolute;
     background-color: red;
     border-radius: 50%;
-}#c2{
+}
+
+#c2 {
     width: 50px;
     height: 50px;
-    left: 28%;
+    left: 38%;
     top: 3%;
     position: absolute;
     background-color: darkcyan;
     border-radius: 50%;
 }
+
+#c3 {
+    width: 50px;
+    height: 50px;
+    left: 75%;
+    top: 3%;
+    position: absolute;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+#c4 {
+    width: 50px;
+    height: 50px;
+    left: 38%;
+    top: 73%;
+    position: absolute;
+    background-color: deeppink;
+    border-radius: 50%;
+}
+
+#c5 {
+    width: 50px;
+    height: 50px;
+    left: 3%;
+    top: 37%;
+    position: absolute;
+    background-color: fuchsia;
+    border-radius: 50%;
+}#c6 {
+    width: 50px;
+    height: 50px;
+    left: 38%;
+    top: 37%;
+    position: absolute;
+    background-color:#3f341e ;
+    border-radius: 50%;
+}#c7 {
+    width: 50px;
+    height: 50px;
+    left: 75%;
+    top: 37%;
+    position: absolute;
+    background-color:#9c5e35 ;
+    border-radius: 50%;
+}#c8 {
+    width: 50px;
+    height: 50px;
+    left: 75%;
+    top: 73%;
+    position: absolute;
+    background-color:#5f1d11 ;
+    border-radius: 50%;
+}#c9 {
+    width: 50px;
+    height: 50px;
+    left: 3%;
+    top: 73%;
+    position: absolute;
+    background-color:#032d5d ;
+    border-radius: 50%;
+}
+

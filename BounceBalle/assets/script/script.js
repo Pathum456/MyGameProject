@@ -94,6 +94,7 @@ $("#name").click(function () {
     $("#name").css("display", "none");
 
 });
+/* character color change part*/
 $("#changeColor").css("display", "none");
 
 $("#colorPicker").click(function () {
@@ -103,10 +104,42 @@ $("#colorPicker").click(function () {
 $("#c1").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
-    $("#character").css("background-color","red");
+    $("#character").css("background-color", "red");
+
 });
 $("#c2").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
-    $("#character").css("background-color","darkcyan");
+    $("#character").css("background-color", "darkcyan");
+});
+$("#c3").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "orange");
+});
+$("#c4").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "deeppink");
+});
+$("#c5").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "fuchsia");
+});$("#c6").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "#3f341e");
+});$("#c7").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "#9c5e35");
+});$("#c8").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "#5f1d11");
+});$("#c9").click(function () {
+    $("#changeColor").css("display", "none");
+    $("#colorPicker").css("display", "block");
+    $("#character").css("background-color", "#032d5d");
 });
