@@ -10,6 +10,7 @@ var jumping = 0;
 var counter = 0;
 
 $("#startBtn").click(function () {
+    $("#gameOver").css("display","none");
     $("#name").css("display", "none");
     character.style.top = 100 + "px";
     $("#hdiv").css("display", "none");
@@ -34,6 +35,7 @@ $("#startBtn").click(function () {
             //$("#addName").text("Start");
             character.style.top = 100 + "px";
             counter = 0;
+            $("#gameOver").css("display","block");
 
         }
 
@@ -168,3 +170,6 @@ function typeWriter() {
     }
 }
 */
+$("#gameOver").click(function (){
+   $("#gameOver").css("display","none");
+});

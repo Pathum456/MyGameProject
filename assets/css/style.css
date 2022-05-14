@@ -308,6 +308,7 @@ body {
     font-weight: bold;
     color: yellow;
     font-size: 98px;
+    z-index: 1000;
 }
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
