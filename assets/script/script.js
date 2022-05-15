@@ -25,7 +25,7 @@ $("#startBtn").click(function () {
     });
     var highsScore = 0;
     $("#addName").click(function () {
-        setInterval(function () {
+       var go= setInterval(function () {
 
 
             var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -46,6 +46,7 @@ $("#startBtn").click(function () {
                 $("#gameOver").css("display", "block");
                 bgMusic.pause();
                 playSound();
+                clearInterval(go);
 
             }
 
@@ -119,10 +120,12 @@ $("#changeColor").css("display", "none");
 $("#colorPicker").click(function () {
     $("#changeColor").css("display", "block");
     $("#colorPicker").css("display", "none");
+    $(".img1").css("display", "none");
 });
 $("#changeColor").click(function () {
     $("#changeColor").css("display", "none");
     $("#colorPicker").css("display", "block");
+    $(".img1").css("display", "block");
 });
 $("#c1").click(function () {
     $("#changeColor").css("display", "none");
@@ -171,19 +174,7 @@ $("#c9").click(function () {
     $("#character").css("background-color", "#032d5d");
 });
 /*------------*/
-/*
-var i = 0;
-var txt = 'Buounce Ball';
-var speed = 70;
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("title").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-*/
 $("#gameOver").click(function () {
     $("#gameOver").css("display", "none");
     $(".img1").css("display", "block");
