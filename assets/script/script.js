@@ -8,8 +8,9 @@ var hole = document.getElementById("hole");
 var character = document.getElementById("character");
 var jumping = 0;
 var counter = 0;
-var bgMusic=document.getElementById("bgMucsic");
+var bgMusic = document.getElementById("bgMucsic");
 $("#startBtn").click(function () {
+
     bgMusic.play();
     $("#gameOver").css("display", "none");
     $("#name").css("display", "none");
@@ -23,39 +24,39 @@ $("#startBtn").click(function () {
         counter++;
     });
     var highsScore = 0;
-    $("#addName").click(function (){
-    setInterval(function () {
+    $("#addName").click(function () {
+        setInterval(function () {
 
 
-        var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+            var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 
             if (jumping === 0) {
                 character.style.top = (characterTop + 3) + "px";
             }
 
 
-        var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-        var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
-        var cTop = -(500 - characterTop);
-        if ((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
-            // alert("Game over. Score: " + (counter - 1));
-            //$("#addName").text("Start");
-            character.style.top = 100 + "px";
-            counter = 0;
-            $("#gameOver").css("display", "block");
-            bgMusic.pause();
-playSound();
-        }
+            var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+            var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
+            var cTop = -(500 - characterTop);
+            if ((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
+                // alert("Game over. Score: " + (counter - 1));
+                //$("#addName").text("Start");
+                character.style.top = 100 + "px";
+                counter = 0;
+                $("#gameOver").css("display", "block");
+                bgMusic.pause();
+                playSound();
+            }
 
-        if (highsScore < counter) {
-            highsScore = counter;
-            $("#highscore").text(("Best Score :" + (highsScore)))
-        }
-        $("#score").text(("Score :" + (counter)))
-    }, 10);
+            if (highsScore < counter) {
+                highsScore = counter;
+                $("#highscore").text(("Best Score :" + (highsScore)))
+            }
+            $("#score").text(("Score :" + (counter)))
+        }, 10);
 
 
-});
+    });
 });
 
 function jump() {
@@ -185,7 +186,23 @@ $("#gameOver").click(function () {
     $("#gameOver").css("display", "none");
 });
 var sound = document.getElementById("audio");
+
 function playSound() {
 
     sound.play();
 }
+
+/*$("#soundOn").css("display", "block");
+$("#soundOff").css("display", "none");*/
+
+$("#soundOn").click(function () {
+    bgMusic.pause();
+    $("#soundOn").css("display", "none");
+    $("#soundOff").css("display", "block");
+});
+$("#soundOff").click(function () {
+
+    bgMusic.play();
+    $("#soundOn").css("display", "block");
+    $("#soundOff").css("display", "none");
+});

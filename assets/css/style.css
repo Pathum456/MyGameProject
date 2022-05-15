@@ -266,42 +266,50 @@ body {
     position: absolute;
     background-color: fuchsia;
     border-radius: 50%;
-}#c6 {
+}
+
+#c6 {
     width: 50px;
     height: 50px;
     left: 38%;
     top: 37%;
     position: absolute;
-    background-color:#3f341e ;
+    background-color: #3f341e;
     border-radius: 50%;
-}#c7 {
+}
+
+#c7 {
     width: 50px;
     height: 50px;
     left: 75%;
     top: 37%;
     position: absolute;
-    background-color:#9c5e35 ;
+    background-color: #9c5e35;
     border-radius: 50%;
-}#c8 {
+}
+
+#c8 {
     width: 50px;
     height: 50px;
     left: 75%;
     top: 73%;
     position: absolute;
-    background-color:#5f1d11 ;
+    background-color: #5f1d11;
     border-radius: 50%;
-}#c9 {
+}
+
+#c9 {
     width: 50px;
     height: 50px;
     left: 3%;
     top: 73%;
     position: absolute;
-    background-color:#032d5d ;
+    background-color: #032d5d;
     border-radius: 50%;
 }
 
 /*Dash board*/
-#title{
+#title {
     position: absolute;
     left: 23%;
     top: 23%;
@@ -310,25 +318,47 @@ body {
     font-size: 98px;
     z-index: 1000;
 }
+
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /*border-right: .15em solid orange;*/ /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-            typing 6s steps(60, end),
-            blink-caret .75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 6s steps(60, end),
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
-
-/* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+#soundOn{
+    position: absolute;
+    left: 1.8%;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+}#soundOff{
+    position: absolute;
+    left: 1.8%;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+}
+.img1{
+    width: 40px;
+    height: 40px;
 }
