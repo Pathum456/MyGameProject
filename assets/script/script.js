@@ -46,6 +46,7 @@ $("#startBtn").click(function () {
                 $("#gameOver").css("display", "block");
                 bgMusic.pause();
                 playSound();
+
             }
 
             if (highsScore < counter) {
@@ -58,6 +59,7 @@ $("#startBtn").click(function () {
 
     });
 });
+
 
 function jump() {
     jumping = 1;
@@ -184,11 +186,14 @@ function typeWriter() {
 */
 $("#gameOver").click(function () {
     $("#gameOver").css("display", "none");
+    $(".img1").css("display", "block");
+    $("#soundOn").css("display", "block");
+    $("#soundOff").css("display", "block");
 });
 var sound = document.getElementById("audio");
 
 function playSound() {
-
+    $(".img1").css("display", "none");
     sound.play();
 }
 
