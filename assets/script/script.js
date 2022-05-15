@@ -87,12 +87,14 @@ $("#help").click(function () {
     $("#help").css("display", "none");
     $("#hdiv").css("display", "block");
     $("#colorPicker").css("display", "none");
+    $(".img1").css("display", "none");
 });
 $("#hdiv").click(function () {
 
     $("#help").css("display", "block");
     $("#hdiv").css("display", "none");
     $("#colorPicker").css("display", "block");
+    $(".img1").css("display", "block");
 });
 
 $("#addName").click(function () {
