@@ -8,8 +8,9 @@ var hole = document.getElementById("hole");
 var character = document.getElementById("character");
 var jumping = 0;
 var counter = 0;
-
+var bgMusic=document.getElementById("bgMucsic");
 $("#startBtn").click(function () {
+    bgMusic.play();
     $("#gameOver").css("display", "none");
     $("#name").css("display", "none");
     character.style.top = 100 + "px";
@@ -42,7 +43,8 @@ $("#startBtn").click(function () {
             character.style.top = 100 + "px";
             counter = 0;
             $("#gameOver").css("display", "block");
-
+            bgMusic.pause();
+playSound();
         }
 
         if (highsScore < counter) {
@@ -182,3 +184,8 @@ function typeWriter() {
 $("#gameOver").click(function () {
     $("#gameOver").css("display", "none");
 });
+var sound = document.getElementById("audio");
+function playSound() {
+
+    sound.play();
+}
