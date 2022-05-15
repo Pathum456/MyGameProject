@@ -24,6 +24,7 @@ $("#startBtn").click(function () {
         counter++;
     });
     var highsScore = 0;
+
     $("#addName").click(function () {
        var go= setInterval(function () {
 
@@ -182,6 +183,7 @@ $("#gameOver").click(function () {
     $(".img1").css("display", "block");
     $("#soundOn").css("display", "block");
     $("#soundOff").css("display", "block");
+    bgMusic.play();
 });
 var sound = document.getElementById("audio");
 
