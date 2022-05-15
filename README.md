@@ -8,5 +8,5 @@ This is a game developed by using html, css and javascript.
 ![This is an image](assets/images/ss.png)
 
 
-###
-Play Game Using [GitHub Pages](https://pathum456.github.io/MyGameProject/)
+
+### Play Game Using [GitHub Pages](https://pathum456.github.io/MyGameProject/)
